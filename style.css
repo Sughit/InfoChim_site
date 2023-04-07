@@ -91,6 +91,7 @@ a.active,a:hover
     .box
     {
         right:50%;
+        width: 100%;
     }
     label.logo
     {
@@ -119,6 +120,7 @@ a.active,a:hover
         height: 10%;
         width: 100%;
         font-size: 6vw;
+        transform: translate(35%, -10%);
     }
     nav
     {
