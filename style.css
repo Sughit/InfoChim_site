@@ -89,11 +89,13 @@ a.active,a:hover
 @media screen and (max-width: 500px)
 {
     .box
-    {
+    {   
+        height: 70%;
+        padding: 5%;
         left:20%;
         right:60%;
         width: 90%;
-        transform: translate(35%, -15%);
+        transform: translate(20%, -15%);
         overflow: hidden;
     }
     label.logo
@@ -103,6 +105,8 @@ a.active,a:hover
         line-height: 80px;
         position: relative;
         font-weight: bold;
+        margin: 0;
+        padding: 0;
     }
     head
     {
@@ -111,19 +115,50 @@ a.active,a:hover
     .nav_titlu
     {
         background: #213f80;
-        height: 30%;
+        height: 15%;
         width: 100%;
         margin-left: 0;
         font-size: 6vw;
         padding:1%;
     }
+    .nav_titlu_sus
+    {
+        background: #213f80;
+        height: 35vw;
+        width: 100%;
+        margin-left: 0;
+        font-size: 6vw;
+        padding:1%;
+        position: fixed;
+        z-index: 1;
+    }
+    .nav_titlu_sus ul 
+    {
+        transform: translate(0, -15%);
+        position: relative;
+    }
+    .nav_titlu ul li 
+    {
+        display: inline;
+        float: left;
+        transform: translate(15%, -7%);
+        padding: -10%;
+        margin: -10%;
+    }
+    .nav_titlu ul li a 
+    {
+        padding: 0.1%;
+        margin-right: 2vw;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
     .nav_meniu
     {
         background: #213f80;
         height: 10%;
-        width: 95%;
+        width: 100%;
         font-size: 5vw;
-        transform: translate(35%, -15%);
+        transform: translate(30%, -15%);
     }
     /*nav
     {
@@ -188,7 +223,7 @@ a.active,a:hover
     {
         background: url(imagine_fundal_final.png) no-repeat;
         background-size: cover;
-        height: 400px;
+        height: 100%;
         width: 100%;
         margin-left: 0;
     }
