@@ -56,9 +56,26 @@ nav ul li a
     text-transform: uppercase;
     transform: translate(0, -100%);
     background: #4264c2;
+
+    transition-property: transform;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in;
+    transition-delay: 0s;
 }
-a.active,a:hover
+.active_titlu:hover
 {
+    transform: translate(0, -10%);
+}
+.active
+{
+    transition-property: transform;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in;
+    transition-delay: 0s;
+}
+.active:hover
+{
+    transform: translate(10px, 0);
     background: #4264c2;
     transition: .5s;
 }
@@ -106,6 +123,36 @@ a.active,a:hover
     width: 100%;
     margin-left: 0;
     font-size: calc(.6em + 1vw);
+
+    animation-name: inStanga;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: none;
+}
+@keyframe inStanga
+{
+    from
+    {
+        transform: translateX(-400px);
+    }
+    to
+    {
+        transform: translateX(0);
+    }
+}
+@keyframe inSus
+{
+    from
+    {
+        transform: translateY(0);
+    }
+    to
+    {
+        transform: translateY(-10%);
+    }
 }
 @media screen and (max-width: 500px)
 {
@@ -181,6 +228,10 @@ a.active,a:hover
         width: 100%;
         font-size: 5vw;
         transform: translate(30%, -15%);
+    }
+    .notransition * 
+    {
+        transition: none !important;
     }
     /*nav
     {
