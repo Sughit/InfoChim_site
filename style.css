@@ -19,6 +19,7 @@ nav
 }
 label.logo
 {
+    transform: translate(0, 40%);
     color: white;
     font-size: 35px;
     line-height: 80px;
@@ -43,6 +44,18 @@ nav ul li a
     padding: 7px 13px;
     border-radius: 3px;
     text-transform: uppercase;
+}
+.active_titlu
+{
+    margin: 0 5px;
+    display: inline-block;
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    transform: translate(0, -100%);
+    background: #4264c2;
 }
 a.active,a:hover
 {
@@ -78,6 +91,14 @@ a.active,a:hover
     margin-left: 0;
     font-size: calc(.6em + 1vw);
 }
+.nav_titlu_sus
+{
+    background: #213f80;
+    height: 10%;
+    width: 100%;
+    margin-left: 0;
+    font-size: calc(.6em + 1vw);
+}
 .nav_meniu
 {
     background: #213f80;
@@ -101,12 +122,13 @@ a.active,a:hover
     label.logo
     {
         color: white;
-        font-size: calc(.6em + 1vw);
+        font-size: calc(.6em + 2vw);
         line-height: 80px;
         position: relative;
         font-weight: bold;
         margin: 0;
         padding: 0;
+        transform: translate(0, -40%);
     }
     head
     {
@@ -124,11 +146,11 @@ a.active,a:hover
     .nav_titlu_sus
     {
         background: #213f80;
-        height: 35vw;
+        height: 38vw;
         width: 100%;
         margin-left: 0;
         font-size: 6vw;
-        padding:1%;
+        padding:0.1%;
         position: fixed;
         z-index: 1;
     }
@@ -234,7 +256,7 @@ a.active,a:hover
         height: 70%;
         left: 20%;
         top: 55%;
-        transform: translate(-50%, -50%);
+        transform: translate(-50%, -60%);
     }
 }
 section
