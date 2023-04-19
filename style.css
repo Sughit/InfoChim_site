@@ -328,3 +328,15 @@ html
 {
     scroll-behavior: smooth;
 }
+.container {
+    display: grid;
+    align-items: center; 
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 5px;
+   }
+   
+   img {
+     max-width: 130%;
+     max-height:100%;
+     align-items: left;
+   }
