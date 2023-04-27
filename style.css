@@ -176,12 +176,12 @@ a.active:hover
     }
     .box
     {   
-        height: 74% !important;
+        height: 80% !important;
         padding: 5%;
         left:20%;
         right:60%;
         width: 90%;
-        transform: translate(-45%, -55%) !important;
+        transform: translate(-45%, -47%) !important;
         overflow: hidden;
     }
     label.logo
