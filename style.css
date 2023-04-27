@@ -246,7 +246,7 @@ a.active:hover
         height: 10%;
         width: 95%;
         font-size: 5%;
-        transform: translate(30%, -80%);
+        transform: translate(30%, -60%);
     }
     .notransition * 
     {
