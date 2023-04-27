@@ -140,6 +140,12 @@ a.active:hover
     animation-direction: normal;
     animation-fill-mode: none;*/
 }
+.titlu
+{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
 /*@keyframe inStanga
 {
     from
@@ -164,6 +170,10 @@ a.active:hover
 }*/
 @media screen and (max-width: 500px)
 {
+    .ul_titlu
+    {
+        transform: translate(0, -90%);
+    }
     .box
     {   
         height: 70%;
@@ -171,7 +181,7 @@ a.active:hover
         left:20%;
         right:60%;
         width: 90%;
-        transform: translate(20%, -15%);
+        transform: translate(20%, 15%);
         overflow: hidden;
     }
     label.logo
@@ -204,7 +214,7 @@ a.active:hover
         height: 38vw;
         width: 100%;
         margin-left: 0;
-        font-size: 6vw;
+        font-size: 5vw;
         padding:0.1%;
         position: fixed;
         z-index: 1;
