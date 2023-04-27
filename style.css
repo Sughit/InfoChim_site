@@ -182,7 +182,7 @@ a.active:hover
         right:60%;
         width: 90%;
         transform: translate(-45%, -47%) !important;
-
+        overflow: hidden;
     }
     label.logo
     {
