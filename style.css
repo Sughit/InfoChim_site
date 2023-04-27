@@ -1,4 +1,4 @@
-/*Comment*/
+
 *
 {
     padding: 0;
@@ -59,29 +59,7 @@ nav ul li a
     text-transform: uppercase;
     transform: translate(0, -100%);
     background: #4264c2;
-
-    /*transition-property: transform;
-    transition-duration: 0.3s;
-    transition-timing-function: ease-in;
-    transition-delay: 0s;*/
 }
-/*.active_titlu:hover
-{
-    transform: translate(0, -10%);
-}
-.active
-{
-    transition-property: transform;
-    transition-duration: 0.3s;
-    transition-timing-function: ease-in;
-    transition-delay: 0s;
-}
-.active:hover
-{
-    transform: translate(10px, 0);
-    background: #4264c2;
-    transition: .5s;
-}*/
 a.active:hover
 {
     background: #4264c2;
@@ -131,14 +109,6 @@ a.active:hover
     width: 100%;
     margin-left: 0;
     font-size: calc(.6em + 1vw);
-
-    /*animation-name: inStanga;
-    animation-duration: 0.5s;
-    animation-timing-function: ease-in;
-    animation-delay: 0s;
-    animation-iteration-count: 1;
-    animation-direction: normal;
-    animation-fill-mode: none;*/
 }
 .titlu
 {
@@ -146,28 +116,6 @@ a.active:hover
     margin: 0;
     border: 0;
 }
-/*@keyframe inStanga
-{
-    from
-    {
-        transform: translateX(-400px);
-    }
-    to
-    {
-        transform: translateX(0);
-    }
-}
-@keyframe inSus
-{
-    from
-    {
-        transform: translateY(0);
-    }
-    to
-    {
-        transform: translateY(-10%);
-    }
-}*/
 @media screen and (max-width: 500px)
 {
     .ul_titlu
@@ -252,65 +200,12 @@ a.active:hover
     {
         transition: none !important;
     }
-    /*nav
-    {
-        background: #213f80;
-        height: 25%;
-        width: 100%;
-        margin-left: 0;
-        font-size: 6vw;
-    }
-    nav ul
-    {
-        float: right;
-        background-position-x: 40%;
-    }
-    nav ul li a
-    {
-        font-size: 4vw;
-        width: 100%;
-        background-position-x: 40%;
-    }*/
     body
     {
         overflow: auto;
         font-family: montserrat;
         font-size: calc(.6em + 1vw);
     }
-    /*.checkbtn
-    {
-        display: block;
-    }
-    ul
-    {
-        position: fixed;
-        width: 100%;
-        height: 100vh;
-        background: #2c3e50;
-        top: 80px;
-        left: -100%;
-        text-align: center;
-        transition: all .5s;
-    }
-    nav ul li
-    {
-        display: block;
-        margin: 50px 0;
-        line-height: 30px;
-    }
-    nav ul li a 
-    {
-        font-size: 70px;
-    }
-    a:hover,a.active
-    {
-        background: none;
-        color: #0082e6;
-    }
-    #check:checked ~ ul
-    {
-        left: 0;
-    }*/
     section
     {
         background: url(imagine_fundal_final.png) no-repeat;
@@ -339,15 +234,16 @@ html
 {
     scroll-behavior: smooth;
 }
-.container {
+.container 
+{
     display: grid;
     align-items: center; 
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 5px;
-   }
-   
-   img {
-     max-width: 130%;
-     max-height:100%;
-     align-items: left;
-   }
+}
+   img 
+{
+    max-width: 130%;
+    max-height:100%;
+    align-items: left;
+}
