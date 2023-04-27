@@ -176,12 +176,12 @@ a.active:hover
     }
     .box
     {   
-        height: 70%;
+        height: 50%;
         padding: 5%;
         left:20%;
         right:60%;
         width: 90%;
-        transform: translate(20%, 55%);
+        transform: translate(20%, -80%);
         overflow: hidden;
     }
     label.logo
@@ -245,7 +245,7 @@ a.active:hover
         height: 10%;
         width: 100%;
         font-size: 5vw;
-        transform: translate(30%, -15%);
+        transform: translate(30%, -80%);
     }
     .notransition * 
     {
