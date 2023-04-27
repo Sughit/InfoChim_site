@@ -181,7 +181,7 @@ a.active:hover
         left:20%;
         right:60%;
         width: 90%;
-        transform: translate(20%, 15%);
+        transform: translate(20%, 85%);
         overflow: hidden;
     }
     label.logo
