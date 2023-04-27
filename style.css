@@ -172,7 +172,7 @@ a.active:hover
 {
     .ul_titlu
     {
-        transform: translate(0, -90%);
+        transform: translate(0, -40%);
     }
     .box
     {   
@@ -181,7 +181,7 @@ a.active:hover
         left:20%;
         right:60%;
         width: 90%;
-        transform: translate(20%, 85%);
+        transform: translate(20%, 55%);
         overflow: hidden;
     }
     label.logo
@@ -211,7 +211,7 @@ a.active:hover
     .nav_titlu_sus
     {
         background: #213f80;
-        height: 38vw;
+        height: 55vw;
         width: 100%;
         margin-left: 0;
         font-size: 5vw;
