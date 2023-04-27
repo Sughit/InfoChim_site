@@ -176,7 +176,7 @@ a.active:hover
     }
     .box
     {   
-        height: 80% !important;
+        height: 85% !important;
         padding: 5%;
         left:20%;
         right:60%;
@@ -241,6 +241,7 @@ a.active:hover
     }
     .nav_meniu
     {
+        margin: 1 !important;
         background: #213f80;
         height: 10%;
         width: 95%;
