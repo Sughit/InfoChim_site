@@ -97,7 +97,7 @@ a.active:hover
 .nav_titlu_sus
 {
     background: #213f80;
-    height: 10%;
+    height: 18%;
     width: 100%;
     margin-left: 0;
     font-size: calc(.6em + 1vw);
@@ -117,6 +117,15 @@ a.active:hover
     padding: 0;
     margin: 0;
     border: 0;
+}
+summary
+{
+    padding: .5em;
+    background: #6531A8;
+    margin-bottom: 1em;
+    font-weight: bold;
+    font-family: Trebuchet;
+    width: 40%;
 }
 @media screen and (max-width: 500px)
 {
@@ -228,6 +237,7 @@ a.active:hover
 }
 section
 {
+    transform: translate(0, 18%);
     background: url(imagine_fundal_final.png) no-repeat;
     background-size: cover;
     height: calc(110vh - 80px);
