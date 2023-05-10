@@ -127,6 +127,10 @@ summary
     font-family: Trebuchet;
     width: 40%;
 }
+.test_stanga
+{
+    transform:translate(-100,0);
+}
 @media screen and (max-width: 500px)
 {
     .ul_titlu
@@ -240,7 +244,7 @@ section
     transform: translate(0, 18%);
     background: url(imagine_fundal_final.png) no-repeat;
     background-size: cover;
-    height: calc(110vh - 80px);
+    height: calc(100vh - 80px);
 }
 html
 {
