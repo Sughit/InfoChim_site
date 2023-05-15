@@ -38,14 +38,14 @@ nav ul li
 {
     display: inline-block;
     line-height: 80px;
-    margin: 0 5px;
+    margin: 0 2%;
 }
 nav ul li a
 {
     color: white;
     font-size: 17px;
-    padding: 7px 13px;
-    border-radius: 3px;
+    padding: .5vw 2vw;
+    border-radius: 3%;
     text-transform: uppercase;
 }
 .active_titlu
@@ -111,6 +111,7 @@ a.active:hover
     width: 100%;
     margin-left: 0;
     font-size: calc(.6em + 1vw);
+    position: relative;
 }
 .titlu
 {
@@ -125,6 +126,16 @@ summary
     margin-bottom: 1em;
     font-weight: bold;
     font-family: Trebuchet;
+    width: 40%;
+}
+.summary_special
+{
+    padding: .8em;
+    background: #6531A8;
+    margin-bottom: 1em;
+    font-weight: bold;
+    font-family: Trebuchet;
+    height: 10%;
     width: 40%;
 }
 .test_stanga
@@ -245,6 +256,11 @@ section
     background: url(imagine_fundal_final.png) no-repeat;
     background-size: cover;
     height: calc(100vh - 80px);
+}
+.spatiu
+{
+    background: url(fundal_din_fundal) no-repeat;
+    height: 16vh;
 }
 html
 {
