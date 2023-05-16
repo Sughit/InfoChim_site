@@ -11,7 +11,7 @@ body
 {
     font-family: montserrat;
     background-image: url('');
-    cursor: url("cursor.cur")4 12, auto;
+    cursor: url("cursor.cur")2 2, auto;
     cursor: url("cursor2.cur")2 2,pointer, auto;
 }
 nav
