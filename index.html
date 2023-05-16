@@ -34,7 +34,7 @@
         </style>
 
     </head>
-    <body bgcolor="#64BBFF">
+    <body bgcolor="cyan"> <!--#263185-->
 
         <font face="Georgia">
         <nav class="nav_titlu_sus">
@@ -63,7 +63,6 @@
                     <li><a class="active" href="#descompunerea unor carbonati">Descompunerea unor carbonați</a></li>
                     <li><a class="active" href="#descompunerea unor hidroxizi">Descompunerea unor hidroxizi</a></li>
                     <li><a class="active" href="#descompunerea apei oxigenate">Descompunerea apei oxigenate</a></li>
-            
                 </ul>
             </font>
             </nav>
@@ -74,7 +73,7 @@
                 background-color: #0082e6;
                 text-align: left;
                 font-family: montserrat;
-                font-size: 17px;
+                font-size: 1.8em;
             }
         </style>
         <section class="spatiu">
@@ -104,7 +103,7 @@
     </p>
     <nav class="nav_titlu"><label class="logo"><font face="Georgia">Teste de evaluare</font></label></nav>
     <details>
-        <summary><font color="white">Testul NR1</font></summary>
+        <summary><font color="blue">Testul NR1</font></summary>
     <p class="paragraf">Cum se numește reacția chimică in care unul sau mai mulți reactanți se unesc într-un singur produs de reacție?</p>
         <input type="radio" name="test final1">-Reacție de contopire
         <input type="radio" name="test final1" id="corect1">-Reacție de combinare
@@ -114,18 +113,18 @@
         <input type="radio" name="test final2">-substanțe simple
         <input type="radio" name="test final2">-substanțe compuse
         <input type="radio" name="test final2" id="corect2">-substanțe simple sau compuse
-        <input type="submit" name="termina testul" value="Termină testul" onclick="result()">
+        <input type="submit" name="termina testul" value="Termină testul" onClick="result()">
     </details>
     <details>
-        <summary><font color="white">Testul NR2</font></summary>
+        <summary><p align="center"><img src="dioxid_de_mangan.jpg"></p></summary>
         Text
     </details>
     <details>
-        <summary class="test_stanga"><font color="white">Testul NR3</font></summary>
+        <summary><font color="blue">Testul NR3</font></summary>
         Text
     </details>
     <details>
-        <summary><font color="white">Testul NR4</font></summary>
+        <summary><font color="blue">Testul NR4</font></summary>
          Text
     </details>
     </font>
@@ -135,13 +134,17 @@
   function result()
   {
       var punctaj=0;
+      let corect1 = document.getElementById("corect1");
+      let corect2 = document.getElementById("corect2");
       if(document.getElementById('corect1').checked)
       {
           punctaj++;
+          corect1.fontcolor = ("green");
       }
       if(document.getElementById('corect2').checked)
       {
           punctaj++;
+          corect2.fontcolor = ("green");
       }
       alert("Punctajul dumneavoastră este: " + punctaj);
   }
@@ -180,7 +183,7 @@
 </nav><br>
 <pre>
 <details>
-    <summary class="summary_special"><font color="white" size="5%">Test NR1</font></summary>
+    <summary class="summary_special"><font color="blue" size="5%">Test NR1</font></summary>
 <pre><font size="5vw" face="Trebuchet">    <p class="paragraf">Reacția de ardere este o reacție:</p>
         <input type="radio" name="test final1_2" id="corect1_2">-exotermă
         <input type="radio" name="test final1_2">-endotermă
@@ -203,15 +206,15 @@
         <input type="submit" name="termina testul" value="Termină testul" onclick="result2()">
 </details>
 <details>
-    <summary><font color="white">Test NR2</font></summary>
+    <summary><font color="blue">Test NR2</font></summary>
     Text
 </details>
 <details>
-    <summary><font color="white">Test NR3</font></summary>
+    <summary><font color="blue">Test NR3</font></summary>
     Text
 </details>
 <details>
-    <summary><font color="white">Test NR4</font></summary>
+    <summary><font color="blue">Test NR4</font></summary>
     Text
 </details>
     </font>
@@ -269,7 +272,7 @@
     </p> 
 <nav class="nav_titlu"><label class="logo"><font face="Georgia">Teste de evaluare</font></label></nav>
 <details>
-    <summary><font color="white">Text NR1</font></summary>
+    <summary><font color="blue">Text NR1</font></summary>
 <pre><font size="5vw" face="Trebuchet">
     <p class="paragraf">La arderea completă a carbonului se obține:</p>
         <input type="radio" name="test final1_3">-Monoxid de carbon
@@ -294,13 +297,13 @@
         <input type="submit" name="termina testul" value="Termină testul" onclick="result3()">
     </details>
     <details>
-        <summary><font color="white">Test NR2</font></summary>
+        <summary><font color="blue">Test NR2</font></summary>
         Text
     </details><details>
-        <summary><font color="white">Test NR3</font></summary>
+        <summary><font color="blue">Test NR3</font></summary>
         Text
     </details><details>
-        <summary><font color="white">Test NR4</font></summary>
+        <summary><font color="blue">Test NR4</font></summary>
         Text
     </details>
     </font>
@@ -349,7 +352,7 @@
 <nav class="nav_titlu"><label class="logo"><font face="Georgia">Test de evaluare</font></label></nav>
 <pre>
 <details>
-    <summary><font color="white">Test NR1</font></summary>
+    <summary><font color="blue">Test NR1</font></summary>
 <pre><font size="5vw" face="Trebuchet">
     <p class="paragraf">Cu ce halogen reacționeză metalele pentru a forma cloruri:</p>
         <input type="radio" name="test final1_4">-Brom
@@ -368,13 +371,13 @@
         <input type="submit" name="termina testul" value="Termină testul" onclick="result_4()">
 </details>
 <details>
-    <summary><font color="white">Test NR2</font></summary>
+    <summary><font color="blue">Test NR2</font></summary>
     Text
 </details><details>
-    <summary><font color="white">Test NR3</font></summary>
+    <summary><font color="blue">Test NR3</font></summary>
     Text
 </details><details>
-    <summary><font color="white">Test NR4</font></summary>
+    <summary><font color="blue">Test NR4</font></summary>
     Text
 </details>
     </font>
@@ -422,7 +425,7 @@
 <nav class="nav_titlu"><label class="logo"><font face="Georgia">Test de evaluare</font></label></nav>
 <pre>
 <details>
-    <summary><font color="white">Test NR1</font></summary>
+    <summary><font color="blue">Test NR1</font></summary>
 <pre><font size="5vw">
     <p class="paragraf">Prin arderea hidrogenului se obține:</p>
         <input type="radio" name="test final1_5">-Apa oxigenată
@@ -442,13 +445,13 @@
         <input type="submit" name="termina testul" value="Termină testul" onclick="result5()">
 </details>
 <details>
-    <summary><font color="white">Test NR2</font></summary>
+    <summary><font color="blue">Test NR2</font></summary>
     Text
 </details><details>
-    <summary><font color="white">Test NR3</font></summary>
+    <summary><font color="blue">Test NR3</font></summary>
     Text
 </details><details>
-    <summary><font color="white">Test NR4</font></summary>
+    <summary><font color="blue">Test NR4</font></summary>
     Text
 </details>
     </font>
@@ -504,7 +507,7 @@
 </p>
 <nav class="nav_titlu"><label class="logo"><font face="Georgia">Test de evaluare</font></label></nav>
 <details>
-    <summary><font color="white">Test NR1</font></summary>
+    <summary><font color="blue">Test NR1</font></summary>
 <pre><font face="Trebuchet" size="5vw">
     <p class="paragraf">Fenomenul chimic prin care un reactant se transformă în doi sau mai mulți produși de reacție se numește:</p>
         <input type="radio" name="test final1_6" id="corect1_6">-Reacție de descompunere 
@@ -519,13 +522,13 @@
         <input type="submit" name="termina testul" value="Termină testul" onclick="result6()">
 </details>
 <details>
-    <summary><font color="white">Test NR2</font></summary>
+    <summary><font color="blue">Test NR2</font></summary>
     Text
 </details><details>
-    <summary><font color="white">Test NR3</font></summary>
+    <summary><font color="blue">Test NR3</font></summary>
     Text
 </details><details>
-    <summary><font color="white">Test NR4</font></summary>
+    <summary><font color="blue">Test NR4</font></summary>
     Text
 </details>
     </font>
@@ -574,7 +577,7 @@
 
 <nav class="nav_titlu"><label class="logo"><font face="Georgia">Test de evaluare</font></label></nav>
 <details>
-    <summary><font color="white">Test NR1</font></summary>
+    <summary><font color="blue">Test NR1</font></summary>
 <pre><font size="5vw" face="Trebuchet">
     <p class="paragraf">Prin reacția de descompunere la încălzire a unor carbonați se obține:<br><br><br><br>
         <input type="radio" name="test final1_7">-Dioxid de carbon<br>
@@ -589,13 +592,13 @@
         <input type="submit" name="termina testul" value="Termină testul" onclick="result7()">
     </details>
     <details>
-        <summary><font color="white">Test NR2</font></summary>
+        <summary><font color="blue">Test NR2</font></summary>
         Text
     </details><details>
-        <summary><font color="white">Test NR3</font></summary>
+        <summary><font color="blue">Test NR3</font></summary>
         Text
     </details><details>
-        <summary><font color="white">Test NR4</font></summary>
+        <summary><font color="blue">Test NR4</font></summary>
         Text
     </details>
     </font>
@@ -637,7 +640,7 @@
                     </p>
 <nav class="nav_titlu"><label class="logo"><font face="Georgia">Test de evaluare</font></label></nav>
 <details>
-    <summary><font color="white">Test NR1</font></summary>
+    <summary><font color="blue">Test NR1</font></summary>
 <pre><font size="5vw" face="Trebuchet">
     <p class="paragraf">Prin reacția de descompunere la încălzire a unor hidroxizi se obține:<br><br><br><br>
         <input type="radio" name="test final1_8">-Apă oxigenată<br>
@@ -652,13 +655,13 @@
         <input type="submit" name="termina testul" value="Termină testul" onclick="result8()">
     </details>
     <details>
-        <summary><font color="white">Test NR2</font></summary>
+        <summary><font color="blue">Test NR2</font></summary>
         Text
     </details><details>
-        <summary><font color="white">Test NR3</font></summary>
+        <summary><font color="blue">Test NR3</font></summary>
         Text
     </details><details>
-        <summary><font color="white">Test NR4</font></summary>
+        <summary><font color="blue">Test NR4</font></summary>
         Text
     </details>
     </font>
@@ -714,7 +717,7 @@ Descompunerea apei oxigenate eliberează oxigen, deci întreține arderea<br><br
 </p>
 <nav class="nav_titlu"><label class="logo"><font face="Georgia">Test de evaluare</font></label></nav><font size="5vw" face="Trebuchet">
     <details>
-        <summary><font color="white">Test NR1</font></summary>
+        <summary><font color="blue">Test NR1</font></summary>
     <p class="paragraf">Ce este un catalizator:<br><br><br><br>
         <input type="radio" name="test final1_9">-Subsțanta care împiedică viteza de desfășurare a unei reacții<br>
         <input type="radio" name="test final1_9">-Subsțanta cu care reacționează un reactant<br>
@@ -728,13 +731,13 @@ Descompunerea apei oxigenate eliberează oxigen, deci întreține arderea<br><br
         <input type="submit" name="termina testul" value="Termină testul" onclick="result9()">
     </details>
     <details>
-        <summary><font color="white">Test NR2</font></summary>
+        <summary><font color="blue">Test NR2</font></summary>
         Text
     </details><details>
-        <summary><font color="white">Test NR3</font></summary>
+        <summary><font color="blue">Test NR3</font></summary>
         Text
     </details><details>
-        <summary><font color="white">Test NR4</font></summary>
+        <summary><font color="blue">Test NR4</font></summary>
         Text
     </details>
     </font>
@@ -768,21 +771,33 @@ Descompunerea apei oxigenate eliberează oxigen, deci întreține arderea<br><br
         
 
         -Dioxidul de carbon: <br>
-        Principala cauză a încălzirii globale, acumulându-se în atmosferă cantități prea mari, care depășesc capacitatea plantelor de a-l fixa prin fotosinteză.<br><br>
+        Principala cauză a încălzirii globale, acumulându-se în atmosferă cantități prea mari, care depășesc capacitatea plantelor de a-l fixa prin fotosinteză.<br>
+        <details>
+            <summary class="imagini"><p align="center"><img src="buton_imagini.png" width="6%" height="14%"></p></summary>
+        </details>
 
         -Monoxidul de carbon:<br>
         Toxic și letal în concentrații mari;<br>
         Reduce capacitatea sistemului circulator de a transporta oxigenul la țesuturi;<br>
         Produce boli cardiovasculare.<br><br>
+        <details>
+            <summary class="imagini"><p align="center"><img src="buton_imagini.png" width="6%" height="14%"></p></summary>
+        </details>
 
         -Dioxidul de sulf:<br>
         Iritant pentru căile respiratorii;<br>
         Se oxidează la SO<sub>3</sub>, care se combină cu vaporii de apă din atmosferă și produce acidul sulfuric, H<sub>2</sub>SO<sub>4</sub>, principala cauză a ploii acide.<br><br>
+        <details>
+            <summary class="imagini"><p align="center"><img src="buton_imagini.png" width="6%" height="14%"></p></summary>
+        </details>
 
         -Monoxidul de azot:<br>
         Smog fotochimic;<br>
         Efect de seră;<br>
         Afectează aparatul respirator.<br>
+        <details>
+            <summary class="imagini"><p align="center"><img src="buton_imagini.png" width="6%" height="14%"></p></summary>
+        </details>
 </p>
 </font>
         </p>
