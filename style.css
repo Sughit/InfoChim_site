@@ -6,13 +6,19 @@
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
+    scrollbar-width: none; /*scrollbar pentru firefox*/
 }
+
 body
 {
     font-family: montserrat;
     background-image: url('');
     cursor: url("cursor.cur")2 2, auto;
     cursor: url("cursor2.cur")2 2,pointer, auto;
+}
+::-webkit-scrollbar /*scrollbar pentru chrome*/
+{
+    width: 0;
 }
 nav
 {
@@ -97,7 +103,7 @@ a.active:hover
 .nav_titlu_sus
 {
     background: #213f80;
-    height: 18%;
+    height: 14%;
     width: 100%;
     margin-left: 0;
     font-size: calc(.6em + 1vw);
