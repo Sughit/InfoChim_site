@@ -161,12 +161,12 @@ summary
     }
     .box
     {   
-        height: 83% !important;
-        padding: 5%;
+        height: 90% !important;
+        padding: 0;
         left:20%;
         right:60%;
-        width: 90%;
-        transform: translate(-45%, -50%) !important;
+        width: 100vw !important;
+        transform: translate(-30%, -50%) !important;
         overflow: hidden;
     }
     label.logo
@@ -254,7 +254,7 @@ summary
     .box 
     {
         padding: 5%;
-        width: 50%;
+        width: 70%;
         height: 70%;
         left: 20%;
         top: 55%;
