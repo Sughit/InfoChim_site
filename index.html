@@ -114,7 +114,7 @@
         <input type="radio">-substanțe simple
         <input type="radio">-substanțe compuse
         <input type="radio" id="corect2"><description id="2">-substanțe simple sau compuse</description>
-        <input type="submit" value="Termină testul" onClick="corect()">
+        <input type="submit" value="Termină testul" onclick="result();corect()">
     </details>
     <details>
         <summary><font color="blue">Testul NR2</font></summary>
@@ -131,7 +131,7 @@
     </font>
   </font>
 <script type="text/javascript">
-  /*function result()
+  function result()
   {
       var punctaj=0;
       if(document.getElementById('corect1').checked)
@@ -143,7 +143,7 @@
           punctaj++;
       }
       alert("Punctajul dumneavoastră este: " + punctaj);
-  }*/
+  }
   function corect()
   {
       var description1 = document.getElementById("1");
@@ -206,7 +206,7 @@
         <input type="radio">-O<sub>2</sub>Cu
         <input type="radio">-CuO<sub>2</sub>
 
-        <input type="submit" value="Termină testul" onclick="corect()">
+        <input type="submit" value="Termină testul" onclick="result2();corect2()">
 </details>
 <details>
     <summary><font color="blue">Test NR2</font></summary>
@@ -231,7 +231,7 @@
         <input type="radio">-Al<sub>2</sub>O<sub>3</sub>
         <input type="radio">-AlO
 
-    <input type="submit" value="Termină testul" onclick="corect()">
+    <input type="submit" value="Termină testul" onclick="result2_2();corect2_2()">
 </font>
 
 </pre>
@@ -248,7 +248,7 @@
 </font>
 </pre>
     <script type="text/javascript">
-        /*function result2()
+        function result2()
         {
             var punctaj2 = 0;
             if(document.getElementById('corect1_2').checked)
@@ -289,8 +289,8 @@
                 punctaj2_2++;
             }
             alert("Puntajul dumneavostră este: " + punctaj2_2);
-        }*/
-        function corect()
+        }
+        function corect2()
         {
              var description1 = document.getElementById("1_2");
              var description2 = document.getElementById("2_2");
@@ -300,7 +300,10 @@
             description2.style.backgroundColor = 'green';
             description3.style.backgroundColor = 'green';
             description4.style.backgroundColor = 'green';
-             var description1_2 = document.getElementById("1_2_2");
+        }
+        function corect2_2()
+        {
+            var description1_2 = document.getElementById("1_2_2");
              var description2_2 = document.getElementById("2_2_2");
              var description3_2 = document.getElementById("3_2_2");
              var description4_2 = document.getElementById("4_2_2");
