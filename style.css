@@ -263,15 +263,15 @@ summary
 }
 section
 {
-    transform: translate(0, 18%);
+    transform: translate(0, 13.2%);
     background: url(imagine_fundal_final.png) no-repeat;
     background-size: cover;
-    height: calc(100vh - 80px);
+    height: calc(115vh - 80px);
 }
 .spatiu
 {
     background: url(fundal_din_fundal) no-repeat;
-    height: 16vh;
+    height: 14vh;
 }
 html
 {
