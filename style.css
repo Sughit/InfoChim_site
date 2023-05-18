@@ -132,7 +132,7 @@ summary
     margin-bottom: 1em;
     font-weight: bold;
     font-family: Trebuchet;
-    width: 20%;
+    width: 30vw;
 }
 .summary_special
 {
@@ -142,19 +142,35 @@ summary
     font-weight: bold;
     font-family: Trebuchet;
     height: 10%;
-    width: 20%;
+    width: 30vw;
 }
 .imagini
 {
     width: 100%;
     background: none;
 }
-.test_stanga
+button
 {
-    transform:translate(-100,0);
+    display: none;
 }
 @media screen and (max-width: 500px)
 {
+    .summary_special
+    {
+        width: 40vw;
+    }
+    summary
+    {
+        width: 40vw;
+    }
+    .meniu_tel
+    {
+        display: none;
+    }
+    button
+    {
+        display: block;
+    }
     .ul_titlu
     {
         transform: translate(0, -30%);
@@ -196,7 +212,7 @@ summary
     .nav_titlu_sus
     {
         background: #213f80;
-        height: 50vw;
+        height: 35vw;
         width: 100%;
         margin-left: 0;
         font-size: 5vw;
@@ -231,7 +247,7 @@ summary
         height: 10%;
         width: 95%;
         font-size: 5%;
-        transform: translate(30%, -60%);
+        transform: translate(10%, -20%);
     }
     .notransition * 
     {
