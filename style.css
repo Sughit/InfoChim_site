@@ -153,8 +153,18 @@ button
 {
     display: none;
 }
+.img
+{
+    display: block;
+    transform: translate(-10%,-40%);
+}
 @media screen and (max-width: 500px)
 {
+    form
+    {
+        display:none;
+        transform: translate(-5%,0);
+    }
     .summary_special
     {
         width: 40vw;
