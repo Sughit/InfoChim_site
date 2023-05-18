@@ -542,7 +542,7 @@
     </details><details>
         <summary><font color="blue">Test NR3</font></summary>
         <p class="paragraf">Carbonul arde cu scântei?</p>
-        <input type="radio" id="corect1_3_3"><description id="1_3_3">-Adevarat</description>
+        <input type="radio" id="corect1_3_3"><description id="1_3_3">-Adevărat</description>
         <input type="radio">Fals
     <p class="paragraf">Dioxidul de carbon:</p>
         <input type="radio">-Întreține arderea
@@ -1051,15 +1051,23 @@
             <input type="radio" name="test final1_7" id="corect1_7_2"><decription id="1_7_2">-O substanță de culoare neagră și dioxid de carbon</decription><br>
             <input type="radio" name="test final1_7">-Trioxid de cupru<br>
             <input type="radio" name="test final1_7">-Dioxid de carbon și o substanță incoloră<br></p>
-        <p class="paragraf">La descompunerea reactantului CaCO<sub>3</sub> se obține:</li></p>
-            <input type="radio" name="test final2_7" id="corect2_7_2"><descrpition id="2_7_2">-CaO + CO<sub>2</sub>↑</descrpition>  
-            <input type="radio" name="test final2_7">-Ca<sub>2</sub>O + CO<sub>2</sub>↑
-            <input type="radio" name="test final2_7">-CaO<sub>2</sub> + C<sub>2</sub>O↑
-            <input type="radio" name="test final2_7">-CaO<sub>2</sub> + CO<sub>2</sub>↑
+        <p class="paragraf">Formula chimică a carbonatului de calciu este:</li></p>
+            <input type="radio" name="test final2_7" id="corect2_7_2"><descrpition id="2_7_2">CaCO<sub>3</sub></descrpition>  
+            <input type="radio" name="test final2_7">-COCa<sub>3</sub>
+            <input type="radio" name="test final2_7">-CaC<sub>3</sub>O
+            <input type="radio" name="test final2_7">-CaCO
             <input type="submit" name="termina testul" value="Termină testul" onclick="result7_2();corect7_2()">
     </details><details>
         <summary><font color="blue">Test NR3</font></summary>
-        Text
+        <p class="paragraf">Formula chimică a carbonatului de sodiu este:<br><br><br><br>
+            <input type="radio" name="test final1_7">-NaCO<sub>2</sub><br>
+            <input type="radio" name="test final1_7">-Na<sub>2</sub>CO<br>
+            <input type="radio" name="test final1_7">-NaCO<sub>3</sub><br>
+            <input type="radio" name="test final1_7" id="corect1_7_3"><decription id="1_7_3">-Na<sub>2</sub>CO<sub>3</sub></decription><br>
+        <p class="paragraf">Dioxidul de carbon poate întreține o flacără?</li></p>
+            <input type="radio" name="test final2_7">-Adevărat
+            <input type="radio" name="test final2_7" id="corect2_7_3"><descrpition id="2_7_3">-Fals</descrpition>  
+            <input type="submit" name="termina testul" value="Termină testul" onclick="result7_3();corect7_3()">
     </details>
     </font>
 </font>
@@ -1092,6 +1100,19 @@
               }
               alert("Punctajul dumneavoastră este: " + punctaj7_2);
           }
+          function result7_3()
+          {
+              var punctaj7_3=0;
+              if(document.getElementById('corect1_7_3').checked)
+              {
+                  punctaj7_3++;
+              }
+              if(document.getElementById('corect2_7_3').checked)
+              {
+                  punctaj7_3++;
+              }
+              alert("Punctajul dumneavoastră este: " + punctaj7_3);
+          }
           function corect7()
         {
              var description1 = document.getElementById("1_7");
@@ -1109,6 +1130,17 @@
              var description2 = document.getElementById("2_7_2");
              var description3 = document.getElementById("3_7_2");
              var description4 = document.getElementById("4_7_2");
+            description1.style.backgroundColor = 'green';
+            description2.style.backgroundColor = 'green';
+            description3.style.backgroundColor = 'green';
+            description4.style.backgroundColor = 'green';
+        }
+        function corect7_3()
+        {
+             var description1 = document.getElementById("1_7_3");
+             var description2 = document.getElementById("2_7_3");
+             var description3 = document.getElementById("3_7_3");
+             var description4 = document.getElementById("4_7_3");
             description1.style.backgroundColor = 'green';
             description2.style.backgroundColor = 'green';
             description3.style.backgroundColor = 'green';
@@ -1151,13 +1183,17 @@
     </details>
     <details>
         <summary><font color="blue">Test NR2</font></summary>
-        Text
-    </details><details>
-        <summary><font color="blue">Test NR3</font></summary>
-        Text
-    </details><details>
-        <summary><font color="blue">Test NR4</font></summary>
-        Text
+        <p class="paragraf">Hidroxizii se descompun la:<br><br><br><br>
+            <input type="radio" name="test final1_8">-Lumină<br>
+            <input type="radio" name="test final1_8">-Presiune<br>
+            <input type="radio" name="test final1_8" id="corect1_8_2"><description id="1_8_2">-Încălzire</description><br>
+            <input type="radio" name="test final1_8">-Frig</p>
+        <p class="paragraf">În ce se descompune hidroxidul de aluminiu?</li></p>
+            <input type="radio" name="test final2_8">-Trioxid de aluminiu și oxigen
+            <input type="radio" name="test final2_8">-Trioxid de aluminiu și apă
+            <input type="radio" name="test final2_8" id="corect2_8_2"><description id="2_8_2">-Oxid de aluminiu și apă</description> 
+            <input type="radio" name="test final2_8">-Oxid de aluminiu și apă oxigenată
+            <input type="submit" name="termina testul" value="Termină testul" onclick="result8_2();corect8_2()">
     </details>
     </font>
 </font>
@@ -1176,12 +1212,36 @@
               }
               alert("Punctajul dumneavoastră este: " + punctaj8);
           }
+          function result8_2()
+          {
+              var punctaj8_2=0;
+              if(document.getElementById('corect1_8').checked)
+              {
+                  punctaj8_2++;
+              }
+              if(document.getElementById('corect2_8').checked)
+              {
+                  punctaj8_2++;
+              }
+              alert("Punctajul dumneavoastră este: " + punctaj8_2);
+          }
           function corect8()
         {
              var description1 = document.getElementById("1_8");
              var description2 = document.getElementById("2_8");
              var description3 = document.getElementById("3_8");
              var description4 = document.getElementById("4_8");
+            description1.style.backgroundColor = 'green';
+            description2.style.backgroundColor = 'green';
+            description3.style.backgroundColor = 'green';
+            description4.style.backgroundColor = 'green';
+        }
+        function corect8_2()
+        {
+             var description1 = document.getElementById("1_8_2");
+             var description2 = document.getElementById("2_8_2");
+             var description3 = document.getElementById("3_8_2");
+             var description4 = document.getElementById("4_8_2");
             description1.style.backgroundColor = 'green';
             description2.style.backgroundColor = 'green';
             description3.style.backgroundColor = 'green';
@@ -1238,13 +1298,20 @@ Descompunerea apei oxigenate eliberează oxigen, deci întreține arderea<br><br
     </details>
     <details>
         <summary><font color="blue">Test NR2</font></summary>
-        Text
-    </details><details>
-        <summary><font color="blue">Test NR3</font></summary>
-        Text
-    </details><details>
-        <summary><font color="blue">Test NR4</font></summary>
-        Text
+        <p class="paragraf">Descompunerea apei oxigenate întreține arderea?<br><br><br><br>
+            <input type="radio" name="test final1_9" id="corect1_9_2"><description id="1_9_2">-Adevărat</description><br>
+            <input type="radio" name="test final1_9">-Fals<br></p>
+        <p class="paragraf">Oxigenul degajat la descompunerea sa, la lumină nu:</p>
+            <input type="radio" name="test final2_9">-Distruge microbii
+            <input type="radio" name="test final2_9">-Decolorează părul
+            <input type="radio" name="test final2_9" id="corect2_9_2"><descrpition id="2_9_2">-Se bea</descrpition>
+            <input type="radio" name="test final2_9">-Decolorează sângele
+        <p class="paragraf">În ce se descompune apa oxigenată?</p>
+            <input type="radio" name="test final3_9" id="corect3_9_2"><descrpition id="3_9_2">-Apă și oxigen</descrpition>
+            <input type="radio" name="test final3_9">-Apă și hidrogen
+            <input type="radio" name="test final3_9">-Hidrogen și Oxigen 
+            <input type="radio" name="test final3_9">-Nu se descompune
+            <input type="submit" name="termina testul" value="Termină testul" onclick="result9_2();corect9_2()">
     </details>
     </font>
 </font>
@@ -1263,12 +1330,40 @@ Descompunerea apei oxigenate eliberează oxigen, deci întreține arderea<br><br
         }
         alert("Punctajul dumneavoastră este: " + punctaj9);
     }
+    function result9_2()
+    {
+        var punctaj9_2=0;
+        if(document.getElementById('corect1_9_2').checked)
+        {
+            punctaj9_2++;
+        }
+        if(document.getElementById('corect2_9_2').checked)
+        {
+            punctaj9_2++;
+        }
+        if(document.getElementById('corect3_9_2').checked)
+        {
+            punctaj9_2++;
+        }
+        alert("Punctajul dumneavoastră este: " + punctaj9_2);
+    }
     function corect9()
         {
              var description1 = document.getElementById("1_9");
              var description2 = document.getElementById("2_9");
              var description3 = document.getElementById("3_9");
              var description4 = document.getElementById("4_9");
+            description1.style.backgroundColor = 'green';
+            description2.style.backgroundColor = 'green';
+            description3.style.backgroundColor = 'green';
+            description4.style.backgroundColor = 'green';
+        }
+        function corect9_2()
+        {
+             var description1 = document.getElementById("1_9_2");
+             var description2 = document.getElementById("2_9_2");
+             var description3 = document.getElementById("3_9_2");
+             var description4 = document.getElementById("4_9_2");
             description1.style.backgroundColor = 'green';
             description2.style.backgroundColor = 'green';
             description3.style.backgroundColor = 'green';
