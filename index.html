@@ -153,15 +153,19 @@
     </details>
     <details>
         <summary><font color="blue">Testul NR2</font></summary>
-        Text
-    </details>
-    <details>
-        <summary><font color="blue">Testul NR3</font></summary>
-        Text
-    </details>
-    <details>
-        <summary><font color="blue">Testul NR4</font></summary>
-         Text
+        <p class="paragraf">Varul stins:</p>
+        <input type="radio">-este dăunător mediului 
+        <input type="radio" id="corect1_1"><description id="1_1">-are efect dezinfectant</description>
+        <input type="radio">-se folosește la pictat pereții
+    <p class="paragraf">Amoniacul se folosește:</li></p>
+        <input type="radio" id="corect2_1"><description id="2_1">-La curățarea mobilei</description>
+        <input type="radio">-pentru îngrijirea plantelor
+        <input type="radio">-în industria textilelor
+    <p class="paragraf">Acidul clorhidric se folosește:</li></p>
+        <input type="radio">-pentru dezinfectare
+        <input type="radio" id="corect3_1"><description id="3_1">-în industria medicamentelor</description>
+        <input type="radio">-ca și îngrășământ
+        <input type="submit" value="Termină testul" onclick="result1_2();corect1_2()">
     </details>
     </font>
   </font>
@@ -185,6 +189,32 @@
       var description2 = document.getElementById("2");
       description1.style.backgroundColor = 'green';
       description2.style.backgroundColor = 'green';
+  }
+  function result1_2()
+  {
+      var punctaj1_2=0;
+      if(document.getElementById('corect1_1').checked)
+      {
+          punctaj1_2++;
+      }
+      if(document.getElementById('corect2_1').checked)
+      {
+          punctaj1_2++;
+      }
+      if(document.getElementById('corect3_1').checked)
+      {
+          punctaj1_2++;
+      }
+      alert("Punctajul dumneavoastră este: " + punctaj1_2);
+  }
+  function corect1_2()
+  {
+      var description1 = document.getElementById("1_1");
+      var description2 = document.getElementById("2_1");
+      var description3 = document.getElementById("3_1");
+      description1.style.backgroundColor = 'green';
+      description2.style.backgroundColor = 'green';
+      description3.style.backgroundColor = 'green';
   }
 </script></pre>
             </font>
@@ -273,11 +303,45 @@
 </details>
 <details>
     <summary><font color="blue">Test NR3</font></summary>
-    Text
+    <pre><font size="5vw" face="Trebuchet"><p class="paragraf">Ce se obține în urma arderii cuprului?</p>
+        <input type="radio">-Trioxid de cupru
+        <input type="radio">-O substanță incoloră
+        <input type="radio">-Dioxid de cupru 
+        <input type="radio" id="corect1_2_3"><description id="1_2_3">-O substanță de culoare neagră</description>
+    <p class="paragraf">În urma arderii unui metal, ce fenomen nu se poate întâmpla?</p>
+        <input type="radio">-Degajarea de căldură
+        <input type="radio" id="corect2_2_3"><description id="2_2_3">Apariția unui sunet</description>
+        <input type="radio">-Apariția luminii
+    <p class="paragraf">În urma arderii sodiului se obține:</p>
+        <input type="radio">-NaO<sub>2</sub>
+        <input type="radio">-2NaO
+        <input type="radio" id="corect3_2_3"><description id="3_2_3">-Na<sub>2</sub>O</description>
+        <input type="radio">-NaO
+
+    <input type="submit" value="Termină testul" onclick="result2_3();corect2_3()">
+</font>
+
+</pre>
 </details>
 <details>
     <summary><font color="blue">Test NR4</font></summary>
-    Text
+    <pre><font size="5vw" face="Trebuchet">Oxidul de aluminiu are culoarea:<p class="paragraf"></p>
+        <input type="radio" id="corect1_2_4"><description id="1_2_4">-Alb</description>
+        <input type="radio">-Negru
+        <input type="radio">-Verde
+        <input type="radio">-Incolor
+    <p class="paragraf">Formula chimică a oxidului de potasiu este:</p>
+        <input type="radio">-K<sub>2</sub>O
+        <input type="radio" id="corect2_2_4"><description id="2_2_4">2KO</description>
+        <input type="radio">-KO<sub>2</sub>
+        <input type="radio">-KO
+    <p class="paragraf">Formula chimică a oxidului de zinc este:</p>
+        <input type="radio">-Zn<sub>2</sub>O
+        <input type="radio" id="corect3_2_4"><description id="3_2_4">-ZnO</description>
+        <input type="radio">-2ZnO
+        <input type="radio">-ZnO<sub>2</sub>
+
+    <input type="submit" value="Termină testul" onclick="result2_4();corect2_4()">
 </details>
     </font>
 </font>
@@ -325,6 +389,40 @@
             }
             alert("Puntajul dumneavostră este: " + punctaj2_2);
         }
+        function result2_3()
+        {
+            var punctaj2_3 = 0;
+            if(document.getElementById('1_2_3').checked)
+            {
+                punctaj2_3++;
+            }
+            if(document.getElementById('2_2_3').checked)
+            {
+                punctaj2_3++;
+            }
+            if(document.getElementById('3_2_3').checked)
+            {
+                punctaj2_3++;
+            }
+            alert("Puntajul dumneavostră este: " + punctaj2_3);
+        }
+        function result2_4()
+        {
+            var punctaj2_4 = 0;
+            if(document.getElementById('1_2_4').checked)
+            {
+                punctaj2_4++;
+            }
+            if(document.getElementById('2_2_4').checked)
+            {
+                punctaj2_4++;
+            }
+            if(document.getElementById('3_2_4').checked)
+            {
+                punctaj2_4++;
+            }
+            alert("Puntajul dumneavostră este: " + punctaj2_4);
+        }
         function corect2()
         {
              var description1 = document.getElementById("1_2");
@@ -346,6 +444,24 @@
             description2_2.style.backgroundColor = 'green';
             description3_2.style.backgroundColor = 'green';
             description4_2.style.backgroundColor = 'green';
+        }
+        function corect2_3()
+        {
+            var description1_3 = document.getElementById("1_2_3");
+             var description2_3 = document.getElementById("2_2_3");
+             var description3_3 = document.getElementById("3_2_3");
+            description1_3.style.backgroundColor = 'green';
+            description2_3.style.backgroundColor = 'green';
+            description3_3.style.backgroundColor = 'green';
+        }
+        function corect2_4()
+        {
+            var description1_4 = document.getElementById("1_2_4");
+             var description2_4 = document.getElementById("2_2_4");
+             var description3_4 = document.getElementById("3_2_4");
+            description1_4.style.backgroundColor = 'green';
+            description2_4.style.backgroundColor = 'green';
+            description3_4.style.backgroundColor = 'green';
         }
     </script>
 </pre>
