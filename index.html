@@ -325,7 +325,7 @@
 </details>
 <details>
     <summary><font color="blue">Test NR4</font></summary>
-    <pre><font size="5vw" face="Trebuchet">Oxidul de aluminiu are culoarea:<p class="paragraf"></p>
+    <pre><font size="5vw" face="Trebuchet"><p class="paragraf">Oxidul de aluminiu are culoarea:</p>
         <input type="radio" id="corect1_2_4"><description id="1_2_4">-Alb</description>
         <input type="radio">-Negru
         <input type="radio">-Verde
@@ -371,19 +371,19 @@
         function result2_2()
         {
             var punctaj2_2 = 0;
-            if(document.getElementById('1_2_2').checked)
+            if(document.getElementById('corect1_2_2').checked)
             {
                 punctaj2_2++;
             }
-            if(document.getElementById('2_2_2').checked)
+            if(document.getElementById('corect2_2_2').checked)
             {
                 punctaj2_2++;
             }
-            if(document.getElementById('3_2_2').checked)
+            if(document.getElementById('corect3_2_2').checked)
             {
                 punctaj2_2++;
             }
-            if(document.getElementById('4_2_2').checked)
+            if(document.getElementById('corect4_2_2').checked)
             {
                 punctaj2_2++;
             }
@@ -392,15 +392,15 @@
         function result2_3()
         {
             var punctaj2_3 = 0;
-            if(document.getElementById('1_2_3').checked)
+            if(document.getElementById('corect1_2_3').checked)
             {
                 punctaj2_3++;
             }
-            if(document.getElementById('2_2_3').checked)
+            if(document.getElementById('corect2_2_3').checked)
             {
                 punctaj2_3++;
             }
-            if(document.getElementById('3_2_3').checked)
+            if(document.getElementById('corect3_2_3').checked)
             {
                 punctaj2_3++;
             }
@@ -409,15 +409,15 @@
         function result2_4()
         {
             var punctaj2_4 = 0;
-            if(document.getElementById('1_2_4').checked)
+            if(document.getElementById('corect1_2_4').checked)
             {
                 punctaj2_4++;
             }
-            if(document.getElementById('2_2_4').checked)
+            if(document.getElementById('corect2_2_4').checked)
             {
                 punctaj2_4++;
             }
-            if(document.getElementById('3_2_4').checked)
+            if(document.getElementById('corect3_2_4').checked)
             {
                 punctaj2_4++;
             }
@@ -527,9 +527,9 @@
         <input type="radio">2SO
         <input type="radio">-SO
         <input type="radio">-S<sub>2</sub>O
-        <input type="radio" id="2_3_2"><description id="2_3_2">-SO<sub>2</sub></description>
+        <input type="radio" id="corect2_3_2"><description id="2_3_2">-SO<sub>2</sub></description>
     <p class="paragraf">Coeficientul oxigenului în ecuația: P<sub>4</sub> + ...O<sub>2</sub> = P<sub>4</sub>O<sub>10</sub></p>
-        <input type="radio" id="3_3_2"><description id="3_3_2">-5</description>
+        <input type="radio" id="corect3_3_2"><description id="3_3_2">-5</description>
         <input type="radio">-3
         <input type="radio">-4
         <input type="radio">-6
@@ -541,10 +541,20 @@
         <input type="submit" value="Termină testul" onclick="result3_2();corect3_2()">
     </details><details>
         <summary><font color="blue">Test NR3</font></summary>
-        Text
-    </details><details>
-        <summary><font color="blue">Test NR4</font></summary>
-        Text
+        <p class="paragraf">Carbonul arde cu scântei?</p>
+        <input type="radio" id="corect1_3_3"><description id="1_3_3">-Adevarat</description>
+        <input type="radio">Fals
+    <p class="paragraf">Dioxidul de carbon:</p>
+        <input type="radio">-Întreține arderea
+        <input type="radio">-Este albicios
+        <input type="radio" id="corect2_3_3"><description id="2_3_3">-Este incolor</description>
+        <input type="radio">-Are miros înecăcios
+    <p class="paragraf">Arderea pulberii de sulf formează un gaz:</p>
+        <input type="radio">-De culoare roșie
+        <input type="radio">-Întunecat
+        <input type="radio" id="corect3_3_3"><description id="3_3_3">-Albicios</description>
+        <input type="radio">-Letal
+        <input type="submit" value="Termină testul" onclick="result3_3();corect3_3()">
     </details>
     </font>
 </font>
@@ -592,6 +602,23 @@
             }
             alert("Punctajul dumneavoastră este: " + punctaj3_2);
         }
+        function result3_3()
+        {
+            var punctaj3_3 = 0;
+            if(document.getElementById('corect1_3_3').checked)
+            {
+                punctaj3_3++;
+            }
+            if(document.getElementById('corect2_3_3').checked)
+            {
+                punctaj3_3++;
+            }
+            if(document.getElementById('corect3_3_3').checked)
+            {
+                punctaj3_3++;
+            }
+            alert("Punctajul dumneavoastră este: " + punctaj3_3);
+        }
         function corect3()
         {
              var description1 = document.getElementById("1_3");
@@ -606,13 +633,22 @@
         function corect3_2()
         {
             var description1_2 = document.getElementById("1_3_2");
-             var description2_3 = document.getElementById("2_3_2");
-             var description3_3 = document.getElementById("3_3_2");
+             var description2_2 = document.getElementById("2_3_2");
+             var description3_2 = document.getElementById("3_3_2");
              var description4_2 = document.getElementById("4_3_2");
             description1_2.style.backgroundColor = 'green';
             description2_2.style.backgroundColor = 'green';
             description3_2.style.backgroundColor = 'green';
             description4_2.style.backgroundColor = 'green';
+        }
+        function corect3_3()
+        {
+            var description1_3 = document.getElementById("1_3_3");
+             var description2_3 = document.getElementById("2_3_3");
+             var description3_3 = document.getElementById("3_3_3");
+            description1_3.style.backgroundColor = 'green';
+            description2_3.style.backgroundColor = 'green';
+            description3_3.style.backgroundColor = 'green';
         }
     </script>
 </pre>
@@ -655,13 +691,23 @@
 </details>
 <details>
     <summary><font color="blue">Test NR2</font></summary>
-    Text
-</details><details>
-    <summary><font color="blue">Test NR3</font></summary>
-    Text
-</details><details>
-    <summary><font color="blue">Test NR4</font></summary>
-    Text
+    <pre><font size="5vw" face="Trebuchet">
+        <p class="paragraf">Clorura de sodiu are forma:</p>
+            <input type="radio" name="test final1_4">-ClNa
+            <input type="radio" name="test final1_4">-Na<sub>2</sub>Cl
+            <input type="radio" name="test final1_4">-NaCl<sub>2</sub>
+            <input type="radio" name="test final1_4" id="corect1_4_2"><description id="1_4_2">-NaCl</description>
+        <p class="paragraf">Care dintre aceste elemente chimice nu este un halogen?</p></li>
+            <input type="radio" name="test final2_4">-Iod
+            <input type="radio" name="test final2_4" id="corect2_4_2"><description id="2_4_2">-Sulf</description>   
+            <input type="radio" name="test final2_4">-Fluor
+            <input type="radio" name="test final2_4">-Brom
+        <p class="paragraf">Clorura de potasiu are forma:</p></li>
+            <input type="radio" name="test final3_4" id="corect3_4_2"><description id="3_4_2">-KCl</description>
+            <input type="radio" name="test final3_4">-ClK
+            <input type="radio" name="test final3_4">-K<sub>2</sub>Cl
+            <input type="radio" name="test final3_4">-KCl<sub>2</sub>
+            <input type="submit" name="termina testul" value="Termină testul" onclick="result_4_2();corect4_2()">
 </details>
     </font>
 </font>
@@ -684,6 +730,23 @@
             punctaj4++;
         }
         alert("Punctajul dumneavoastră este: " + punctaj4);
+    }
+    function result_4_2()
+    {
+        var punctaj4_2=0;
+        if(document.getElementById('corect1_4_2').checked)
+        {
+            punctaj4_2++;
+        }
+        if(document.getElementById('corect2_4_2').checked)
+        {
+            punctaj4_2++;
+        }
+        if(document.getElementById('corect3_4_2').checked)
+        {
+            punctaj4_2++;
+        }
+        alert("Punctajul dumneavoastră este: " + punctaj4_2);
     }        
     function corect4()
         {
@@ -695,6 +758,15 @@
             description2.style.backgroundColor = 'green';
             description3.style.backgroundColor = 'green';
             description4.style.backgroundColor = 'green';
+        }
+        function corect4_2()
+        {
+             var description1 = document.getElementById("1_4_2");
+             var description2 = document.getElementById("2_4_2");
+             var description3 = document.getElementById("3_4_2");
+            description1.style.backgroundColor = 'green';
+            description2.style.backgroundColor = 'green';
+            description3.style.backgroundColor = 'green';
         }
     </script>
 </pre>
@@ -740,13 +812,23 @@
 </details>
 <details>
     <summary><font color="blue">Test NR2</font></summary>
-    Text
-</details><details>
-    <summary><font color="blue">Test NR3</font></summary>
-    Text
-</details><details>
-    <summary><font color="blue">Test NR4</font></summary>
-    Text
+    <pre><font size="5vw" face="Trebuchet">
+        <p class="paragraf">Acidul clorhidric are forma:</p>
+            <input type="radio" name="test final1_5">-H<sub>2</sub>Cl
+            <input type="radio" name="test final1_5" id="corect1_5_2"><descrpition id="1_5_2">-HCl</descrpition>    
+            <input type="radio" name="test final1_5">-HCl<sub>2</sub>
+            <input type="radio" name="test final1_5">-2HCL
+        <p class="paragraf">La reacția azotului cu hidrogenul se obține:</li></p>
+            <input type="radio" name="test final2_5" id="corect2_5_2"><description id="2_5_2">-Amoniac</description> 
+            <input type="radio" name="test final2_5">-Amoniu
+            <input type="radio" name="test final2_5">-Acid azotic
+            <input type="radio" name="test final2_5">-Azotat de hidrogen 
+        <p class="paragraf">Care dintre aceste elemente chimice nu este un nemetal?</li></p>
+            <input type="radio" name="test final3_5">-Azot
+            <input type="radio" name="test final3_5">-Fosfor
+            <input type="radio" name="test final3_5">-Sulf
+            <input type="radio" name="test final3_5" id="corect3_5_2"><description id="3_5_2">-Magneziu</description> 
+            <input type="submit" name="termina testul" value="Termină testul" onclick="result5_2();corect5_2()">
 </details>
     </font>
 </font>
@@ -770,12 +852,40 @@
             }
             alert("Punctajul dumneavoastră este: " + punctaj5);
         }
+        function result5_2()
+        {
+            var punctaj5_2=0;
+            if(document.getElementById('corect1_5').checked)
+            {
+                punctaj5_2++;
+            }
+            if(document.getElementById('corect2_5').checked)
+            {
+                punctaj5_2++;
+            }
+            if(document.getElementById('corect3_5').checked)
+            {
+                punctaj5_2++;
+            }
+            alert("Punctajul dumneavoastră este: " + punctaj5_2);
+        }
         function corect5()
         {
              var description1 = document.getElementById("1_5");
              var description2 = document.getElementById("2_5");
              var description3 = document.getElementById("3_5");
              var description4 = document.getElementById("4_5");
+            description1.style.backgroundColor = 'green';
+            description2.style.backgroundColor = 'green';
+            description3.style.backgroundColor = 'green';
+            description4.style.backgroundColor = 'green';
+        }
+        function corect5_2()
+        {
+             var description1 = document.getElementById("1_5_2");
+             var description2 = document.getElementById("2_5_2");
+             var description3 = document.getElementById("3_5_2");
+             var description4 = document.getElementById("4_5_2");
             description1.style.backgroundColor = 'green';
             description2.style.backgroundColor = 'green';
             description3.style.backgroundColor = 'green';
@@ -828,13 +938,16 @@
 </details>
 <details>
     <summary><font color="blue">Test NR2</font></summary>
-    Text
-</details><details>
-    <summary><font color="blue">Test NR3</font></summary>
-    Text
-</details><details>
-    <summary><font color="blue">Test NR4</font></summary>
-    Text
+    <p class="paragraf">Cloratul de potasiu se folosește la:</p>
+        <input type="radio" name="test final1_6" id="corect1_6_2"><description id="1_6_2">-Obținerea oxigenului în laborator</description> 
+        <input type="radio" name="test final1_6">-Obținerea oxigenului artificial
+        <input type="radio" name="test final1_6">-Decolorarea materialelor textile
+    <p class="paragraf">Care este formula corectă pentru descompunerea apei? </li></p>
+        <input type="radio" name="test final2_6">-2H<sub>2</sub>O = H<sub>2</sub> + O<sub>2</sub>
+        <input type="radio" name="test final2_6">-H<sub>2</sub>O = 2H<sub>2</sub> + O<sub>2</sub>
+        <input type="radio" name="test final2_6" id="corect2_6_2"><description id="2_6_2">-2H<sub>2</sub>O = 2H<sub>2</sub> + O<sub>2</sub></description> 
+        <input type="radio" name="test final2_6">-H<sub>2</sub>O = 2H + O<sub>2</sub>
+        <input type="submit" name="termina testul" value="Termină testul" onclick="result6_2();corect6_2()">
 </details>
     </font>
 </font>
@@ -853,12 +966,36 @@
               }
               alert("Punctajul dumneavoastră este: " + punctaj6);
           }
+          function result6_2()
+          {
+              var punctaj6_2=0;
+              if(document.getElementById('corect1_6').checked)
+              {
+                  punctaj6_2++;
+              }
+              if(document.getElementById('corect2_6').checked)
+              {
+                  punctaj6_2++;
+              }
+              alert("Punctajul dumneavoastră este: " + punctaj6_2);
+          }
           function corect6()
         {
              var description1 = document.getElementById("1_6");
              var description2 = document.getElementById("2_6");
              var description3 = document.getElementById("3_6");
              var description4 = document.getElementById("4_6");
+            description1.style.backgroundColor = 'green';
+            description2.style.backgroundColor = 'green';
+            description3.style.backgroundColor = 'green';
+            description4.style.backgroundColor = 'green';
+        }
+        function corect6_2()
+        {
+             var description1 = document.getElementById("1_6_2");
+             var description2 = document.getElementById("2_6_2");
+             var description3 = document.getElementById("3_6_2");
+             var description4 = document.getElementById("4_6_2");
             description1.style.backgroundColor = 'green';
             description2.style.backgroundColor = 'green';
             description3.style.backgroundColor = 'green';
@@ -909,12 +1046,19 @@
     </details>
     <details>
         <summary><font color="blue">Test NR2</font></summary>
-        Text
+        <p class="paragraf">Ce se obține în urma arderii carbonatului de cupru?<br><br><br><br>
+            <input type="radio" name="test final1_7">-Dioxid de carbon<br>
+            <input type="radio" name="test final1_7" id="corect1_7_2"><decription id="1_7_2">-O substanță de culoare neagră și dioxid de carbon</decription><br>
+            <input type="radio" name="test final1_7">-Trioxid de cupru<br>
+            <input type="radio" name="test final1_7">-Dioxid de carbon și o substanță incoloră<br></p>
+        <p class="paragraf">La descompunerea reactantului CaCO<sub>3</sub> se obține:</li></p>
+            <input type="radio" name="test final2_7" id="corect2_7_2"><descrpition id="2_7_2">-CaO + CO<sub>2</sub>↑</descrpition>  
+            <input type="radio" name="test final2_7">-Ca<sub>2</sub>O + CO<sub>2</sub>↑
+            <input type="radio" name="test final2_7">-CaO<sub>2</sub> + C<sub>2</sub>O↑
+            <input type="radio" name="test final2_7">-CaO<sub>2</sub> + CO<sub>2</sub>↑
+            <input type="submit" name="termina testul" value="Termină testul" onclick="result7_2();corect7_2()">
     </details><details>
         <summary><font color="blue">Test NR3</font></summary>
-        Text
-    </details><details>
-        <summary><font color="blue">Test NR4</font></summary>
         Text
     </details>
     </font>
@@ -935,12 +1079,36 @@
               }
               alert("Punctajul dumneavoastră este: " + punctaj7);
           }
+          function result7_2()
+          {
+              var punctaj7_2=0;
+              if(document.getElementById('corect1_7_2').checked)
+              {
+                  punctaj7_2++;
+              }
+              if(document.getElementById('corect2_7_2').checked)
+              {
+                  punctaj7_2++;
+              }
+              alert("Punctajul dumneavoastră este: " + punctaj7_2);
+          }
           function corect7()
         {
              var description1 = document.getElementById("1_7");
              var description2 = document.getElementById("2_7");
              var description3 = document.getElementById("3_7");
              var description4 = document.getElementById("4_7");
+            description1.style.backgroundColor = 'green';
+            description2.style.backgroundColor = 'green';
+            description3.style.backgroundColor = 'green';
+            description4.style.backgroundColor = 'green';
+        }
+        function corect7_2()
+        {
+             var description1 = document.getElementById("1_7_2");
+             var description2 = document.getElementById("2_7_2");
+             var description3 = document.getElementById("3_7_2");
+             var description4 = document.getElementById("4_7_2");
             description1.style.backgroundColor = 'green';
             description2.style.backgroundColor = 'green';
             description3.style.backgroundColor = 'green';
@@ -1231,13 +1399,8 @@ Descompunerea apei oxigenate eliberează oxigen, deci întreține arderea<br><br
         <p class="paragraf">Ce se obține în urma arderii carbonatului de cupru?<br><br><br><br>
             <input type="radio" name="test final100">Dioxid de carbon<br>
             <input type="radio" name="test final100">Dioxid de carbon și o substanță incoloră<br>
-            <input type="radio" name="test final100" id="corect100">O substanță de culoare neagră și dioxid de carbon<br>
-            <input type="radio" name="test final100">Trioxid de cupru</p>
-        <p class="paragraf">Ce se obține în urma arderii de cupru?<br>
-            <input type="radio" name="test final100">Dioxid de carbon<br>
-            <input type="radio" name="test final100">Dioxid de carbon și o substanță incoloră<br>
             <input type="radio" name="test final100" id="corect100"><description id="100">O substanță de culoare neagră și dioxid de carbon</description><br>
-            <input type="radio" name="test final100">Trioxid de cupru<br></p>
+            <input type="radio" name="test final100">Trioxid de cupru</p>
         <p class="paragraf">Cu ce halogen reacționează metalele pentru a forma cloruri?</p><br>
             <input type="radio" name="test final110">Brom
             <input type="radio" name="test final110" id="corect110"><description id="110">Clor</description>
@@ -1246,7 +1409,6 @@ Descompunerea apei oxigenate eliberează oxigen, deci întreține arderea<br><br
         <p class="paragraf">Prin ardere, hidrogenul se combină cu oxigenul și formează:</p><br>
             <input type="radio" name="test final120">Dioxid de carbon
             <input type="radio" name="test final120">Apă oxigenata
-            <input type="radio" name="test final120" id="corect120">Vapori de apă
             <input type="radio" name="test final120" id="corect120"><description id="120">Vapori de apă</description>
             <input type="radio" name="test final120">Oxid de hidrogen
 
@@ -1305,7 +1467,7 @@ Descompunerea apei oxigenate eliberează oxigen, deci întreține arderea<br><br
                 }
                 alert("Punctajul dumneavoastră este: " + punctaj10);
             }
-            function corect3()
+            function corect10()
         {
              var description1 = document.getElementById("10");
              var description2 = document.getElementById("20");
